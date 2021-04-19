@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a5184764-c81d-49fa-92f8-a22e36f3583d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1q5dwcj99doFfecNdSyrleuevHd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../node" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\WebstormProjects\test\node\19sobooks\sobooks\routes" />
+      <recent name="D:\JetBrains\WebstormProjects\test\node\21middleware\midapp\routes" />
+      <recent name="D:\JetBrains\WebstormProjects\test\node\20form\formapp\public\javascripts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\WebstormProjects\test\node\00database" />
+      <recent name="D:\JetBrains\WebstormProjects\test\node\19sobooks\sobooks\public\images" />
+      <recent name="D:\JetBrains\WebstormProjects\test\node\19sobooks\sobooks\public\javascripts" />
+      <recent name="D:\JetBrains\WebstormProjects\test\node\21middleware\midapp\public\javascripts" />
+      <recent name="D:\JetBrains\WebstormProjects\test\node\20form\formapp" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5184764-c81d-49fa-92f8-a22e36f3583d" name="Default Changelist" comment="" />
+      <created>1616373624421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616373624421</updated>
+      <workItem from="1616373625477" duration="23089000" />
+      <workItem from="1616459388198" duration="15096000" />
+      <workItem from="1616546221385" duration="24756000" />
+      <workItem from="1616632523842" duration="10035000" />
+      <workItem from="1616718914953" duration="5974000" />
+      <workItem from="1616978233826" duration="10667000" />
+      <workItem from="1617064891453" duration="41000" />
+      <workItem from="1617064950685" duration="3811000" />
+      <workItem from="1617068802595" duration="24000" />
+      <workItem from="1617068833610" duration="11655000" />
+      <workItem from="1617154416477" duration="615000" />
+      <workItem from="1617259808360" duration="6791000" />
+      <workItem from="1617323914899" duration="9998000" />
+      <workItem from="1617669677610" duration="16382000" />
+      <workItem from="1617755491478" duration="14560000" />
+      <workItem from="1617842726163" duration="1222000" />
+      <workItem from="1617928368512" duration="9610000" />
+      <workItem from="1618187743900" duration="1335000" />
+      <workItem from="1618189151267" duration="501000" />
+      <workItem from="1618189663987" duration="153000" />
+      <workItem from="1618189825140" duration="22213000" />
+      <workItem from="1618274564264" duration="18369000" />
+      <workItem from="1618360191084" duration="14213000" />
+      <workItem from="1618446939787" duration="21585000" />
+      <workItem from="1618533578106" duration="22135000" />
+      <workItem from="1618792624303" duration="19332000" />
+      <workItem from="1618826290008" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="832" y="418" key="#Custom_Plugin_Repositories" timestamp="1617068719162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="832" y="418" key="#Custom_Plugin_Repositories/0.0.1920.1040@0.0.1920.1040" timestamp="1617068719162" />
+    <state x="562" y="161" key="#Plugins" timestamp="1618189818173">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="562" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1618189818173" />
+    <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1618451659386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618451659386" />
+    <state x="618" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618820308667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618820308667" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617008693574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617008693574" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618826307483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618826307483" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1618451709296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1618451709296" />
+    <state x="662" y="252" width="596" height="594" key="find.popup" timestamp="1618814545852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="252" width="596" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618814545852" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618473492942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618473492942" />
+  </component>
+</project>

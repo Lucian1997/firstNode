@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lBook</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<canvas></canvas>
+<div class="header">
+    <div class="nav-header"></div>
+    <div class="nav">
+        <div class="nav-list">
+            <div class="link"><a href="/">首页</a></div>
+            <% for (let i = 0; i < category.length; i++){ %>
+                <div class="link">
+                    <a href="/category/<%= category[i].id %>/page/1"><%= category[i].category %></a>
+                </div>
+            <% } %>
+            <div class="search">
+                <input type="text" id="search">
+                <button class="searchBtn">
+                    <span class="icon"></span>
+                    <span class="text">搜索</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <div class="book-list">
+            <% for (let i = 0; i < books.length; i++) { %>
+                <a href="/books/<%= books[i].id %>">
+                    <div class="book-item">
+                        <img class="bool-img"
+                             src="<%= books[i].bookimg %>"
+                             alt="">
+                        <h3 class="title"><%= books[i].bookname %></h3>
+                        <p class="author"><%= books[i].author %></p>
+                        <div class="category"><%= books[i].category %></div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+        <div class="erweima">
+            <img src="/images/QRcode.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="pagination">
+        <div class="pageBtns">
+            <% if (currentPage > 1) { %>
+                <a href="/<%= currentPage - 1 %>">上一页</a>
+            <% } %>
+            <% for (let i = startPage; i <= endPage; i++) { %>
+                <a <% if (currentPage === i){%>class="active" <%}%> href="/<%= i %>"><%= i %></a>
+            <% } %>
+            <% if (currentPage < pageAll) { %>
+                <a href="/<%= currentPage + 1 %>">下一页</a>
+            <% } %>
+        </div>
+        <div class="pageTotal">
+            共<%= pageAll %>页
+        </div>
+    </div>
+</div>
+
+<script src='/javascripts/lodash.js'></script>
+<script src="/javascripts/index.js"></script>
+<script>
+  let searchBtn = document.querySelector(".searchBtn")
+  searchBtn.onclick = function (e) {
+    let value = document.querySelector("#search").value
+    location.href = "/search/" + value + "/page/1"
+  }
+</script>
+</body>
+</html>

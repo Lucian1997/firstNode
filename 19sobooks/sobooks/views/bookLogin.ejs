@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lBook登录注册</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<script src="/javascripts/jquery-3.6.0.min.js"></script>
+<script src="/javascripts/ban.js"></script>
+<body>
+<canvas class="cavs" width="1575" height="1337"></canvas>
+
+<div class="loginmain">
+
+    <section id="content">
+        <div class="content-header clearfix">
+            <a href="javascript:;" class="current">登陆</a>
+            <a href="javascript:;">我要注册</a>
+        </div>
+
+        <div class="content-body">
+            <div class="dom" style="display: block">
+                <form action="/login" method="post">
+                    <div class="s1">
+                        <h4>账户</h4>
+                        <input type="text" name="username" placeholder="用户名/手机/邮箱">
+                    </div>
+                    <div class="s1">
+                        <h4>密码</h4>
+                        <input type="password" name="password" placeholder="请输入密码">
+                    </div>
+                    <div class="s2">
+                        <input type="checkbox" >
+                        <span>记住密码</span>
+                    </div>
+                    <input type="submit" class="btn" value="登&nbsp;陆">
+                </form>
+                <div class="dom-footer">
+<!--                    <div class="login-another">-->
+<!--                        <a href="#">找回密码</a>-->
+<!--                        <span>|</span>-->
+<!--                        <span>还没有注册帐号?</span>-->
+<!--                        <a href="#">立即注册</a>-->
+<!--                    </div>-->
+                    <div class="login-three">
+                        <span>使用第三方登陆</span>
+                        <div class="login-icon">
+                            <a href="">
+                                <img src="/images/qq.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/images/wechat.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dom">
+                <form id="register" action="/login/register" method="post">
+                    <div class="s1">
+                        <h4>用户名</h4>
+                        <input type="text" name="username" placeholder="请输入用户名">
+                    </div>
+                    <div class="s1">
+                        <h4>密码</h4>
+                        <input type="password" name="password" placeholder="请输入密码">
+                    </div>
+                    <div class="s1">
+                        <h4>确认密码</h4>
+                        <input type="password" name="re_password" placeholder="再次输入密码">
+                    </div>
+                    <div class="s1">
+                        <h4>电子邮箱</h4>
+                        <input type="text" name="email" placeholder="请输入电子邮箱">
+                    </div>
+<!--                    <div class="s1 msg-code">-->
+<!--                        <h4>短信验证码</h4>-->
+<!--                        <input type="password" name="password" placeholder="填写短信验证码">-->
+<!--                        <input type="button" value="获取短信验证码">-->
+<!--                    </div>-->
+<!--                    <div class="s1">-->
+<!--                        <h4>邀请码<span style="color: #3277fcb8">(选填)</span></h4>-->
+<!--                        <input type="password" name="password" placeholder="请输入密码">-->
+<!--                    </div>-->
+<!--                    <div class="s2">-->
+<!--                        <input type="checkbox" >-->
+<!--                        <span>记住密码</span>-->
+<!--                    </div>-->
+                    <button id="registerBtn" style="cursor: not-allowed" type="submit" disabled="disabled" class="btn">
+                        注&nbsp;册
+                    </button>
+                </form>
+                <div class="dom-footer">
+                    <div class="login-three">
+                        <span>使用第三方登陆</span>
+                        <div class="login-icon">
+                            <a href="">
+                                <img src="/images/qq.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/images/wechat.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+
+<script>
+
+  $(function(){
+    let as = document.getElementsByClassName('content-header')[0].getElementsByTagName('a');
+    let contents = document.getElementsByClassName('dom');
+
+    // 1.2 遍历
+    for (let i = 0; i < as.length; i++) {
+      // 1.2.1 取出单个对象
+      let a = as[i];
+      a.id = i;
+
+      // 1.2.2 监听鼠标的移动事件
+      a.onclick = function () {
+        // 让所有的a的class都清除
+        for (let j = 0; j < as.length; j++) {
+          as[j].className = '';
+          contents[j].style.display = 'none';
+        }
+
+        // 设置当前a的class
+        this.className = 'current';
+        // 从contents数组中取出对应的标签
+        contents[this.id].style.display = 'block';
+      }
+
+    }
+  })
+</script>
+<script>
+    let registerDiv = document.querySelector('#register')
+    let registerInputs = document.querySelectorAll('#register input')
+    let registerBtn = document.querySelector('#registerBtn')
+    registerDiv.oninput = function () {
+      let isAble = true
+      //判断是否有内容为空
+      registerInputs.forEach((item, index) => {
+        if (item.value === '') {
+            isAble = false
+        }
+      })
+      //正则匹配邮箱地址
+      let reg = /^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*\.[a-z]{2,}$/
+      if (registerInputs[1].value === registerInputs[2].value && isAble && reg.test(registerInputs[3].value)) {
+        registerBtn.disabled = false
+        registerBtn.style.cursor = 'pointer'
+      }else {
+        registerBtn.disabled = true
+        registerBtn.style.cursor = 'not-allowed'
+      }
+    }
+</script>
+
+</body>
+</html>
+

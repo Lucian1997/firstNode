@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h1>-的插入方式</h1>
+    <!--  - 是直接插入数据，等号是html相关标签进行转义显示 -->
+    <div>
+        <%- articleTitle %>
+    </div>
+    <h1>=的插入方式</h1>
+    <div>
+        <%= articleTitle %>
+    </div>
+
+  </body>
+</html>

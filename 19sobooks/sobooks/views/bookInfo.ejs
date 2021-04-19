@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= book.bookname%></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/info.css">
+</head>
+<body>
+<canvas></canvas>
+<div class="header">
+    <div class="nav-header"></div>
+    <div class="nav">
+        <div class="nav-list">
+            <div class="link"><a href="/">首页</a></div>
+            <% for (let i = 0; i < category.length; i++){ %>
+                <div class="link">
+                    <a href="/category/<%= category[i].id %>/page/1"><%= category[i].category %></a>
+                </div>
+            <% } %>
+            <div class="search">
+                <input type="text" id="search">
+                <button class="searchBtn">
+                    <span class="icon"></span>
+                    <span class="text">搜索</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="content" style="background: #efefef;">
+        <div class="book-list" style="padding: 0 20px 20px 20px;">
+            <%- book.brief%>
+        </div>
+        <div class="erweima">
+            <img src="/images/QRcode.jpg" alt="">
+        </div>
+    </div>
+</div>
+<script>
+  let delDiv = document.querySelector("body > div.container > div > div.book-list > div.e-secret")
+  delDiv.parentElement.removeChild(delDiv)
+  delDiv = document.querySelector("body > div.container > div > div.book-list > table > tbody > tr:nth-child(1) > td:nth-child(1) > p")
+  delDiv.parentElement.removeChild(delDiv)
+</script>
+<script src='/javascripts/lodash.js'></script>
+<script src="/javascripts/index.js"></script>
+<script>
+  let searchBtn = document.querySelector(".searchBtn")
+  searchBtn.onclick = function (e) {
+    let value = document.querySelector("#search").value
+    location.href = "/search/" + value + "/page/1"
+  }
+</script>
+</body>
+</html>

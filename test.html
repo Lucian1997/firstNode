@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>扫一扫</title>
+  <script src="http://rescdn.qqmail.com/node/ww/wwopenmng/js/sso/wwLogin-1.0.0.js"></script>
+
+</head>
+<body>
+<div id="wxLogin" ></div>
+
+<script>
+  window.WwLogin({
+    "id" : "wxLogin",  //显示二维码的容器id
+    "appid" : "ww1d12134e735cc794",
+    "agentid" : "1000010",  //企业微信的cropID，在 企业微信管理端->我的企业 中查看
+    "redirect_uri" :"http://arshcoo.f3322.net:81/",   //重定向地址，需要进行UrlEncode
+    "state" : "3828293919281",   //用于保持请求和回调的状态，授权请求后原样带回给企业。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议企业带上该参数
+    "href" : "",    //自定义样式链接，企业可根据实际需求覆盖默认样式。详见文档底部FAQ
+  });
+</script>
+</body>
+</html>
